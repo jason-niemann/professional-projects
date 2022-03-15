@@ -48,3 +48,4 @@ cmake-build-debug*
 course_files_export*
 ~*.docx
 CMakeLists.txt
+*.iml

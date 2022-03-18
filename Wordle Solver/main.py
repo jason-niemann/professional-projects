@@ -67,9 +67,13 @@ possibleWords = []
 for word in words:
     # TODO: Use the doesNotContain, ___atPos, and notAtPos functions to solve your Wordle
     # Place multiple letters between the quotation marks as necessary: ___atPos('hello')
-    # Be careful with double letters. For example, if your last guess was 'plaza' and the 'a' at position 3
-    # is correct, but the 'a' at position 5 is incorrect, then you should mark ___atPos(3, 'a') and notAtPos(5, 'a').
+    # You do not need to use the contains('') function as it is automatically called in other functions.
+
+    # Be careful with double letters.
+    # For example, if your last guess was 'plaza' and the 'a' at position 3 is correct, but the 'a' at position 5 is
+    # incorrect, then you should mark both ___atPos(3, 'a') and notAtPos(5, 'a').
     # Do NOT mark doesNotContain('a') as this would contradict the fact that ___atPos(3, 'a') is true.
+
     # Double check that your letters are in the appropriate spots!
     # Enjoy!
     if hasLength(5) and doesNotContain('') and contains('') and \
@@ -77,7 +81,7 @@ for word in words:
             notAtPos(1, '') and notAtPos(2, '') and notAtPos(3, '') and notAtPos(4, '') and notAtPos(5, ''):
         possibleWords.append(word)
 
-# Display next best word and all possible words
+# Display next most likely word and all possible words
 print("All possible words (ordered by likelihood):")
 for word in possibleWords:
     print(word)

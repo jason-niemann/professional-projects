@@ -72,7 +72,7 @@ for word in words:
     # Be careful with double letters.
     # For example, if your last guess was 'plaza' and the 'a' at position 3 is correct, but the 'a' at position 5 is
     # incorrect, then you should mark both ___atPos(3, 'a') and notAtPos(5, 'a').
-    # Do NOT mark doesNotContain('a') as this would contradict the fact that ___atPos(3, 'a') is true.
+    # However, do NOT mark doesNotContain('a') as this would contradict the fact that ___atPos(3, 'a') is true.
 
     # Double check that your letters are in the appropriate spots!
     # Enjoy!
